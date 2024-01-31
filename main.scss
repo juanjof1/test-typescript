@@ -1,0 +1,52 @@
+
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$error-color: #e74c3c;
+
+$form-padding: 20px;
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: $form-padding;
+
+    label{
+        display: block;
+        margin-bottom: 10px;
+        
+    }
+
+    input{
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+    }
+
+    &:focus{
+        outline: none;
+        border-color: $error-color;
+    }
+
+    .error-message {
+        color:$error-color;
+        margin-top:5px;
+    }
+
+    .submit{
+        background-color:$primary-color;
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $secondary-color;
+        }
+    }
+
+
+}
